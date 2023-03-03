@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Six</title>
+    <!-- Bootstrap CDN linked here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Fontawesone CSS link here -->
+    <link rel="stylesheet" href="./style/all.min.css">
+    <link rel="stylesheet" href="./style/fontawesome.min.css">
+    <!-- custom css link here -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="bg-dark">
+    <header class="p-5 text-center">
+        <div class="mx-auto">
+            <h1 class="fw-semibold">AI Universe Hub</h1>
+            <button class="btn btn-danger p-3 mt-4 fs-5 fw-bold">Sort By Date</button>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+          <div class="row row-cols-1 row-cols-md-3 g-4" id="card-container">
+            <!-- <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Features</h5>
+                  <ol class="card-text">
+                    <li>Natural language processing</li>
+                    <li>Natural processing</li>
+                    <li>Natural language processing</li>
+                  </ol>
+                </div>
+                <hr class="hr-mix mx-auto">
+                <div class="d-flex justify-content-between align-items-center px-4">
+                    <div class="">
+                        <h3 class="">Last updated 3 mins ago</h3>
+                        <div class=" fs-5 py-4">
+                            <i class="fa-regular fa-calendar-days"></i>
+                        <span class="fw-bold px-2">10-20-30</span>
+                        </div>
+                      </div>
+                      <div>
+                        <i class="fa-sharp fa-solid fa-arrow-right bg-danger p-2 rounded rounded-circle bgmuted"></i>
+                      </div>
+                </div>
+              </div>
+            </div> -->
+            
+          </div>
+        </section>
+
+          <section id="show-all" class="text-center mt-5 d-none">
+            <button id="show-more-btn" class="btn btn-primary p-3">
+                Load more...
+            </button>
+        </section>
+        <!-- Spinner add  -->
+        <section class="d-none" id="spinner">
+          <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </section>
+    </main>
+    
+<!-- MODAL SECTION -->
+    <section>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <!-- Bootstrap JS CDN linked here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS files here -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

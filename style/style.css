@@ -1,0 +1,12 @@
+.hr-mix{
+    width: 90%;
+    border-radius: 50px;
+}
+.bgmuted{
+    opacity: .5;
+}
+.bgmuted:hover{
+    opacity: 1;
+    transition: all .5s ease;
+    cursor: pointer;
+}
